@@ -1,0 +1,12 @@
+GEM
+  remote: https://rubygems.org/
+  specs:
+    mimemagic (0.3.0)
+    pushbullet-ruby (0.0.1)
+      mimemagic (~> 0.0)
+
+PLATFORMS
+  ruby
+
+DEPENDENCIES
+  pushbullet-ruby
