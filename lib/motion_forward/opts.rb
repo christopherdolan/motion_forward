@@ -1,9 +1,7 @@
 require 'optparse'
 
 @options = {
-	:key => File.join(Dir.home, ".pushbullet_api.key"),
-	:url => "http://swamp.climbup.me:13371",
-	:event => "?"
+	:key => File.join(Dir.home, ".pushbullet_api.key")
 }
 
 OptionParser.new do |opts|
@@ -18,12 +16,10 @@ OptionParser.new do |opts|
 	end
 
 	opts.on("-f", "--file FILE", "File to send") do |f|
-		@options[:file] = true
 		@options[:path] = f
 	end
 
 	opts.on("-u", "--url URL", "Link to send") do |u|
-		@options[:link] = true
 		@options[:url] = u
 	end
 end.parse!
