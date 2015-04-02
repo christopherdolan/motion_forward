@@ -18,13 +18,12 @@ OptionParser.new do |opts|
 	end
 
 	opts.on("-f", "--file FILE", "File to send") do |f|
-		@options[:file] = f
+		@options[:file] = true
+		@options[:path] = f
 	end
 
-	opts.on("-u", "--url LINK", "Link to send") do |u|
+	opts.on("-u", "--url URL", "Link to send") do |u|
+		@options[:link] = true
 		@options[:url] = u
 	end
 end.parse!
-
-require 'pp'
-pp @options

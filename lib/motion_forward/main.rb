@@ -2,7 +2,7 @@ require 'motion_forward/file'
 require 'motion_forward/link'
 
 auth
-if @options.include?(:file) ^ @options.include?(:url)
+if @options[:file] ^ @options[:url]
 	file if @options[:file]
 	link if @options[:url]
 else
