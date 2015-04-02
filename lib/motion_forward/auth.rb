@@ -6,7 +6,7 @@ def auth
 		Pushbullet.set_access_token @options[:key]
 		puts "Access token set."
 	else
-		STDERR.puts "File not accessbile: #{@options[:key]}"
+		STDERR.puts "File not accessible: #{@options[:key]}"
 		exit -1
 	end
 end
