@@ -13,10 +13,13 @@ else
 	exit -2
 end
 
-filename = ARGV.first
+event_num, filename = ARGV
+
+puts "Event Number: #{event_num}"
 puts "Filename: #{filename}"
+
 if File.readable? filename
-	Pushbullet::V2::Push.file(filename, "Motion: front door")
+	Pushbullet::V2::Push.file(filename, "Event ##{event_num}: front door")
 	puts "File #{filename} pushed to all devices."
 else
 	STDERR.puts("File not found: #{filename}")
