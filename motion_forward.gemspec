@@ -7,8 +7,9 @@ Gem::Specification.new do |s|
 	s.platform      = Gem::Platform::RUBY
 	s.authors       = ["Chris Dolan"]
 	s.email         = ["aelien27@gmail.com"]
-	s.summary       = "A handy script for forwarding motion capture events to PushBullet"
-	s.description   = "What began as a purpose-built script is now creeping into a general PushBullet CLI client."
+  s.homepage      = "https://rubygems.org/gems/motion_forward"
+	s.summary       = "Motion Forward is a little project I started to add Pushbullet support to my Motion-enabled Raspberry Pi webcam."
+	s.description   = "Motion Forward is a little project I started to add Pushbullet support to my Motion-enabled Raspberry Pi webcam."
 
 	s.files         = `git ls-files`.split("\n")
 	s.test_files    = `git ls-files -- {test,spec,features}/*`.split("\n")
